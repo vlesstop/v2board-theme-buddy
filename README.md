@@ -1,5 +1,5 @@
-# v2board_theme_buddy
-v2board免费主题buddy
+# V2board分离主题，去特征，不怕墙，免费主题。
+前后端分离，加载速度快，体积小，防墙
 群 https://t.me/themebuddy
 # 测试站点：
 https://buddy.appie.top/
