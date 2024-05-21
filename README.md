@@ -2,6 +2,7 @@
 前后端分离，加载速度快，体积小，防墙
 群 https://t.me/themebuddy
 ## 请star 本项目，作品后续都会更新在本项目下
+## 已完美支持xiao佬版本v2board  https://github.com/wyx2685/v2board
 # 测试站点：
 https://buddy.appie.top/
 测试账号：demo@gmail.com
