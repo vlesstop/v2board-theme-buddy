@@ -4,6 +4,7 @@
 ## 请star 本项目，作品后续都会更新在本项目下
 ## 已完美支持xiao佬版本v2board  https://github.com/wyx2685/v2board
 # 测试站点：
+各位下载到的部署版是没有右下角弹窗的，可放心部署
 https://buddy.appie.top/
 测试账号：demo@gmail.com
 测试密码：12345678
