@@ -2,8 +2,8 @@
 前后端分离，加载速度快，体积小，防墙
 群 https://t.me/themebuddy
 ## 请star 本项目，作品后续都会更新在本项目下
-## 已完美支持xiao佬版本v2board  [https://github.com/wyx2685/v2board](https://github.com/wyx2685/v2board)
-## 已完美支持大熊版本xboard [ [https://github.com/wyx2685/v2board](https://github.com/cedar2025/Xboard)](https://github.com/cedar2025/Xboard)
+## 已完美支持xiao佬版本v2board    https://github.com/wyx2685/v2board
+## 已完美支持大熊版本xboard       https://github.com/cedar2025/Xboard
 # 测试站点：
 各位下载到的部署版是没有右下角弹窗的，可放心部署
 https://buddy.appie.top/
