@@ -1,5 +1,6 @@
 # V2board分离主题，去特征，不怕墙，免费主题。
 前后端分离，加载速度快，体积小，防墙
+如需定制主题，单独开发，请加群沟通
 群 https://t.me/themebuddy
 ## 请star 本项目，作品后续都会更新在本项目下
 ## 已完美支持xiao佬版本v2board    https://github.com/wyx2685/v2board
