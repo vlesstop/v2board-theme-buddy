@@ -11,9 +11,13 @@ https://buddy.appie.top/
 测试账号：demo@gmail.com
 测试密码：12345678
 # 支付完成后不能正确跳转的请修改epay.php
-`` 'return_url' => $order['return_url'], ``
+```
+ 'return_url' => $order['return_url'], 
+```
 修改为：
-`` 'return_url' => config('v2board.app_url') . '/#/dashboard/checkout/' . $order['trade_no'], ``
+```
+'return_url' => config('v2board.app_url') . '/#/dashboard/checkout/' . $order['trade_no'], 
+```
 ![image](https://github.com/vlesstop/v2board_theme_buddy/assets/48223192/41ad78c3-f0a9-40ed-b914-7382f4acafa3)
 ![image](https://github.com/vlesstop/v2board_theme_buddy/assets/48223192/81b34400-9fc8-4517-bddb-77d5ee59f738)
 ![image](https://github.com/vlesstop/v2board_theme_buddy/assets/48223192/58c4f0bd-ac14-4b3a-b267-20f7488b4e69)
