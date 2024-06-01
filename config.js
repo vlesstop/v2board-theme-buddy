@@ -1,7 +1,7 @@
 window.config = {
-  logo: "https://img2.imgtp.com/2024/03/11/YzU8iDJp.png", // 网站logo
-  title: "AirBus", // 网站标题
-  host: "https://xxx.xxx/", // 后端接口地址
+  logo: "https://i2.mjj.rip/2024/06/01/36eadf5d44442726dd61c4cd061653f3.jpeg", // 网站logo
+  title: "BitDuct|Pro", // 网站标题
+  host: "https://www.bitduct.net/", // 后端接口地址
   storeHome: {
     title: "选择最适合你的订阅计划", // 套餐页标题
     description:
