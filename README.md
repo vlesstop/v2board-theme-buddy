@@ -2,6 +2,7 @@
 前后端分离，加载速度快，体积小，防墙
 ### 如需定制主题，单独开发，请加群沟通
 群 https://t.me/themebuddy
+![定制案例]（https://github.com/vlesstop/v2board-theme-buddy/blob/main/%E5%AE%9A%E5%88%B6%E6%A1%88%E4%BE%8B.md）
 ## 请star 本项目，作品后续都会更新在本项目下
 ## 已完美支持xiao佬版本v2board    https://github.com/wyx2685/v2board
 ## 已完美支持大熊版本xboard       https://github.com/cedar2025/Xboard
