@@ -18,6 +18,9 @@ https://buddy.appie.top/
 ```
 'return_url' => config('v2board.app_url') . '/#/dashboard/checkout/' . $order['trade_no'], 
 ```
+![image](https://github.com/vlesstop/v2board-theme-buddy/assets/48223192/c5235ab6-bf70-4ed4-a5b3-762f7e4ce15e)
+![image](https://github.com/vlesstop/v2board-theme-buddy/assets/48223192/1f5f3147-1e9e-4c9f-8df8-c17a885b0faa)
+
 ![image](https://github.com/vlesstop/v2board_theme_buddy/assets/48223192/41ad78c3-f0a9-40ed-b914-7382f4acafa3)
 ![image](https://github.com/vlesstop/v2board_theme_buddy/assets/48223192/81b34400-9fc8-4517-bddb-77d5ee59f738)
 ![image](https://github.com/vlesstop/v2board_theme_buddy/assets/48223192/58c4f0bd-ac14-4b3a-b267-20f7488b4e69)
