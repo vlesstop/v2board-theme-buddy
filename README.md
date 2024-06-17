@@ -1,4 +1,4 @@
-# V2board分离主题，去特征，不怕墙，免费主题。
+# V2board分离主题，V2board免费主题，V2board去特征主题，V2board防墙主题，免费主题。
 前后端分离，加载速度快，体积小，防墙
 ### 如需定制主题，单独开发，请加群沟通
 群 https://t.me/themebuddy
