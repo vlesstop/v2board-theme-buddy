@@ -1,5 +1,5 @@
 # V2board分离主题，V2board免费主题，V2board去特征主题，V2board防墙主题，免费主题。
-前后端分离，加载速度快，体积小，防墙
+AirBuddy - Bus: 前后端分离，加载速度快，体积小，防墙
 ### 如需定制主题，单独开发，请加群沟通
 群 https://t.me/themebuddy
 定制案例 https://github.com/vlesstop/v2board-theme-buddy/blob/main/%E5%AE%9A%E5%88%B6%E6%A1%88%E4%BE%8B.md
