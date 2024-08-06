@@ -73,17 +73,9 @@ telegram 群组 : [**https://t.me/themebuddy**](https://t.me/themebuddy)，我�
 
 移动端预览：
 
-<div style="display: flex; justify-content: space-between;">
-    <div style="flex: 1 1 auto; height: 600px; overflow: auto">
-        <img src="custom3-8.jpg" alt="自定义风格8">
-    </div>
-    <div style="flex: 1 1 auto; height: 600px; overflow: auto">
-        <img src="custom3-9.jpg" alt="自定义风格9">
-    </div>
-    <div style="flex: 1 1 auto; height: 600px; overflow: auto">
-        <img src="custom3-10.jpg" alt="自定义风格10">
-    </div>
-</div>
+| 下载页 | 个人页 | 购买页 |
+|--------------------------|--------------------------|----------------------------|
+| ![自定义风格8](custom3-8.jpg) | ![自定义风格9](custom3-9.jpg) | ![自定义风格10](custom3-10.jpg) |
 
 ```
 重要提醒: 
