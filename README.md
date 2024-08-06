@@ -71,6 +71,14 @@ telegram 群组 : [**https://t.me/themebuddy**](https://t.me/themebuddy)，我�
 ![自定义布局7](custom3-7.jpg)
 ![自定义布局6](custom3-6.jpg)
 
+移动端预览：
+
+<div style="display: flex; justify-content: space-around; align-items: flex-start;">
+    <img src="custom3-8.jpg" alt="自定义风格8" width="33%">
+    <img src="custom3-9.jpg" alt="自定义风格9" width="33%">
+    <img src="custom3-10.jpg" alt="自定义风格10" width="33%">
+</div>
+
 ```
 重要提醒: 
 定制案例不进行二次销售，谢绝上门就要求过往案例源码的客户
