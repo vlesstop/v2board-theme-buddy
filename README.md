@@ -17,13 +17,15 @@
 *   预览账号 : demo@gmail.com / 12345678
 *   交流群组 : [**https://t.me/themebuddy**](https://t.me/themebuddy)
 
+####
+
 ## 常见问题
 
-### 1.前端主题如何部署？
+#### 1.前端主题如何部署？
 
 可参考 Youtube 视频教程: [**https://youtu.be/aWl9YJMTFsM?si=gRY5R5STxK9k5PhD**](https://youtu.be/aWl9YJMTFsM?si=gRY5R5STxK9k5PhD)
 
-### 2.支付完成后不能正确跳转的请修改 epay.php
+#### 2.支付完成后不能正确跳转的请修改 epay.php
 ```
  'return_url' => $order['return_url'], 
 ```
@@ -32,15 +34,19 @@
 'return_url' => config('v2board.app_url') . '/#/dashboard/checkout/' . $order['trade_no'], 
 ```
 
-### 3.知识库教程文档如何编写？
+#### 3.知识库教程文档如何编写？
 
 我们内置了一系列样式规则，包括色块、按钮、复制订阅等能力，您只需按照规则编写即可，具体规则请参考 [**教程样式规则**](教程样式规则.md)
 
+
+------------------------------
 
 ## 主题定制
 
 我们具备出色的用户体验设计能力、以及搞定一切的全栈开发能力，如果您有定制需求，请加 telegram 群组联系我们
 telegram 群组 : [**https://t.me/themebuddy**](https://t.me/themebuddy)，我们提供的不仅仅是主题代码，而是为你量身订做的最优解决方案，我们的目标是帮助您解决业务问题，而不是卖代码
+
+####
 
 ## 定制案例
 
@@ -69,9 +75,9 @@ telegram 群组 : [**https://t.me/themebuddy**](https://t.me/themebuddy)，我�
 ![自定义布局7](custom3-7.jpg)
 ![自定义布局6](custom3-6.jpg)
 
-<p style="background: #fcde18; color: black; padding: 12px">
-重要提醒: <br> 
-定制案例不进行二次销售，谢绝上门就要求过往案例源码的客户 <br>
-如需定制，只需向我们阐述您的核心诉求，我们将为你提供最优的解决方案，包含设计和技术方案 <br>
-我们提供的不仅仅是主题代码，更是一整套解决方案，我们的目标是帮助您解决问题，而不是卖代码 <br>
-</p>
+```
+重要提醒: 
+定制案例不进行二次销售，谢绝上门就要求过往案例源码的客户
+如需定制，只需向我们阐述您的核心诉求，我们将为你提供最优的解决方案，包含设计和技术方案
+我们提供的不仅仅是主题代码，更是一整套解决方案，我们的目标是帮助您解决问题，而不是卖代码
+```
