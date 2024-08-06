@@ -6,6 +6,7 @@
 ------------------------------
 
 ## 主题信息
+
 *   主题名称 ：**AirBuddy Bus**
 *   主题版本 ：**1.3.2**
 *   更新日期 : 2024/06/21
@@ -15,6 +16,20 @@
 *   在线预览 : [**buddy.appie.top**](https://buddy.appie.top/)
 *   预览账号 : demo@gmail.com / 12345678
 *   交流群组 : [**https://t.me/themebuddy**](https://t.me/themebuddy)
+
+
+## 主题定制
+
+我们具备出色的用户体验设计能力、以及搞定一切的全栈开发能力，如果您有定制需求，请加 telegram 群组联系我们
+telegram 群组 : [**https://t.me/themebuddy**](https://t.me/themebuddy)
+以下展示定制案例
+
+## 定制案例
+
+
+
+
+
 
 # V2board分离主题，V2board免费主题，V2board去特征主题，V2board防墙主题，免费主题。
 AirBuddy - Bus: 前后端分离，加载速度快，体积小，防墙
