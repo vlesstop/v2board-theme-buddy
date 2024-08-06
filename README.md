@@ -17,8 +17,6 @@
 *   预览账号 : demo@gmail.com / 12345678
 *   交流群组 : [**https://t.me/themebuddy**](https://t.me/themebuddy)
 
-####
-
 ## 常见问题
 
 #### 1.前端主题如何部署？
@@ -45,8 +43,6 @@
 
 我们具备出色的用户体验设计能力、以及搞定一切的全栈开发能力，如果您有定制需求，请加 telegram 群组联系我们
 telegram 群组 : [**https://t.me/themebuddy**](https://t.me/themebuddy)，我们提供的不仅仅是主题代码，而是为你量身订做的最优解决方案，我们的目标是帮助您解决业务问题，而不是卖代码
-
-####
 
 ## 定制案例
 
