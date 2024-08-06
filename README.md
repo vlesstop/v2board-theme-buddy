@@ -73,10 +73,16 @@ telegram 群组 : [**https://t.me/themebuddy**](https://t.me/themebuddy)，我�
 
 移动端预览：
 
-<div style="display: flex; justify-content: space-between; align-items: flex-start;">
-    <img src="custom3-8.jpg" alt="自定义风格8" width="30%">
-    <img src="custom3-9.jpg" alt="自定义风格9" width="30%">
-    <img src="custom3-10.jpg" alt="自定义风格10" width="30%">
+<div style="display: flex; justify-content: space-between;">
+    <div style="flex: 1 1 auto; height: 600px; overflow: auto">
+        <img src="custom3-8.jpg" alt="自定义风格8">
+    </div>
+    <div style="flex: 1 1 auto; height: 600px; overflow: auto">
+        <img src="custom3-9.jpg" alt="自定义风格9">
+    </div>
+    <div style="flex: 1 1 auto; height: 600px; overflow: auto">
+        <img src="custom3-10.jpg" alt="自定义风格10">
+    </div>
 </div>
 
 ```
