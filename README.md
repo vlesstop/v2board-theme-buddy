@@ -28,6 +28,22 @@ telegram 群组 : [**https://t.me/themebuddy**](https://t.me/themebuddy)
 
 
 
+## 常见问题
+
+### 1.前端主题如何部署？
+可参考 Youtube 视频教程
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aWl9YJMTFsM?si=Jt1TnDVOO2h2gCjL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### 2.支付完成后不能正确跳转的请修改 epay.php
+```
+ 'return_url' => $order['return_url'], 
+```
+修改为：
+```
+'return_url' => config('v2board.app_url') . '/#/dashboard/checkout/' . $order['trade_no'], 
+```
+
 
 
 
