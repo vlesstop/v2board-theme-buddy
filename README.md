@@ -1,5 +1,5 @@
 <p align="center"><img src="https://github.com/vlesstop/v2board-theme-buddy/blob/main/AirBuddy.png?raw=true" alt="v2board theme zero" width="200" /></p>
-<p align="center"><img src="https://github.com/vlesstop/v2board-theme-buddy/blob/main/AirBuddy%20-%20Bus.png?raw=true" alt="v2board theme zero" width="240" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/vlesstop/v2board-theme-buddy/main/AirBuddy%20-%20Bus.png?raw=true" alt="v2board theme zero" width="320" /></p>
 <p align="center"><b>前后端分离、防墙去特征、开源免费的 v2board/xboard 主题</b></p>
 
 # V2board分离主题，V2board免费主题，V2board去特征主题，V2board防墙主题，免费主题。
