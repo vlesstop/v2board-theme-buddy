@@ -2,6 +2,20 @@
 <p align="center"><img src="https://raw.githubusercontent.com/vlesstop/v2board-theme-buddy/main/AirBuddy%20-%20Bus.png?raw=true" alt="v2board theme zero" width="320" /></p>
 <p align="center"><b>前后端分离、防墙去特征、开源免费的 v2board/xboard 主题</b></p>
 
+
+------------------------------
+
+## 主题信息
+*   主题名称 ：**AirBuddy Bus**
+*   主题版本 ：**1.3.2**
+*   更新日期 : 2024/06/21
+*   环境兼容 : [**v2board**](https://github.com/wyx2685/v2board) / [**xboard**](https://github.com/cedar2025/Xboard)
+*   主题特性 : 前后端分离、加载速度快、体积小、防墙、去特征
+*   主题价格 : **永久开源免费**
+*   在线预览 : [**buddy.appie.top**](https://buddy.appie.top/)
+*   预览账号 : demo@gmail.com / 12345678
+*   交流群组 : [**https://t.me/themebuddy**](https://t.me/themebuddy)
+
 # V2board分离主题，V2board免费主题，V2board去特征主题，V2board防墙主题，免费主题。
 AirBuddy - Bus: 前后端分离，加载速度快，体积小，防墙
 ### 如需定制主题，单独开发，请加群沟通
