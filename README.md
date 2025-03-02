@@ -83,3 +83,6 @@ telegram 群组 : [**https://t.me/themebuddy**](https://t.me/themebuddy)，我�
 如需定制，只需向我们阐述您的核心诉求，我们将为你提供最优的解决方案，包含设计和技术方案
 我们提供的不仅仅是主题代码，更是一整套解决方案，我们的目标是帮助您解决问题，而不是卖代码
 ```
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/vlesstop/v2board-theme-buddy.svg)](https://starchart.cc/vlesstop/v2board-theme-buddy)
