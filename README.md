@@ -21,7 +21,7 @@
 
 #### 1.前端主题如何部署？
 
-可参考 Youtube 视频教程【视频作者非本人】: [**https://youtu.be/aWl9YJMTFsM?si=gRY5R5STxK9k5PhD**](https://youtu.be/aWl9YJMTFsM?si=gRY5R5STxK9k5PhD)
+可参考 Youtube 视频教程【视频作者非本项目作者】: [**https://youtu.be/aWl9YJMTFsM?si=gRY5R5STxK9k5PhD**](https://youtu.be/aWl9YJMTFsM?si=gRY5R5STxK9k5PhD)
 
 #### 2.支付完成后不能正确跳转的请修改 epay.php
 ```
