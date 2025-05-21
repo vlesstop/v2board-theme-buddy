@@ -1,1 +1,197 @@
-import{aA as g,r as u}from"./index-trPnz5BS.js";import{h as o,f as w}from"./User-U_Q68dKX.js";import"./parse-j8CtVGGo.js";const b=()=>o({url:"api/v1/user/info"}),C=()=>o({url:"api/v1/user/notice/fetch"}),O=()=>o({url:"api/v1/user/comm/config"}),$=()=>o({url:"api/v1/user/getSubscribe"}),I=()=>o({url:"api/v1/user/plan/fetch"}),K=()=>o({url:"api/v1/user/order/fetch"}),U=r=>o({url:"api/v1/user/plan/fetch?id="+r}),x=r=>o({url:"api/v1/user/coupon/check",method:"post",data:r}),B=r=>o({url:"api/v1/user/order/save",method:"post",data:r}),D=r=>o({url:"api/v1/user/order/detail?trade_no="+r}),G=r=>o({url:"api/v1/user/order/checkout",method:"post",data:r}),M=()=>o({url:"api/v1/user/order/getPaymentMethod"}),R=r=>o({url:"api/v1/user/order/cancel",method:"post",data:r}),W=g("User",()=>{const r=u(!1);r.value=!1;const a=u(),f=()=>new Promise((e,t)=>{if(a.value!==void 0)return e();b().then(n=>(a.value=n.data,e())).catch(()=>t())}),s=u(),h=()=>new Promise((e,t)=>{if(s.value!==void 0)return e();C().then(n=>(s.value=n,e())).catch(()=>t())}),c=u(),p=()=>new Promise((e,t)=>{if(c.value!==void 0)return e();O().then(n=>(c.value=n.data,e())).catch(()=>t())}),i=u(),m=()=>new Promise((e,t)=>{if(i.value!==void 0)return e();$().then(n=>(i.value=n.data,e())).catch(()=>t())});function P(){return Promise.all([f(),p(),h(),m()])}const l=u(),_=()=>new Promise((e,t)=>{l.value!==void 0&&e(),w().then(n=>{l.value=n.data,e()}).catch(()=>{t()})}),d=u(),S=()=>new Promise((e,t)=>{d.value!==void 0&&e(),I().then(n=>{d.value=n.data,e()}).catch(()=>t())}),v=u();return{AirBuddyCopyRight:r,Init:P,Info:a,Notice:s,Config:c,Subscribe:i,Knowledge:l,Set_Knowledge:_,PlanList:d,Set_PlanList:S,Order:v,Set_Order:()=>new Promise((e,t)=>{v.value&&e(),K().then(n=>{v.value=n.data,e()}).catch(()=>t())})}});export{x as P,B as a,U as b,R as c,D as d,M as e,G as f,W as u};
+import { defineStore, ref } from "./index-trPnz5BS.js";
+import { httpClient, fetchKnowledgeBaseAPI as fetchKnowledgeBaseArticlesAPI } from "./User-U_Q68dKX.js"; // Assuming w is fetchKnowledgeBaseAPI renamed to fetchKnowledgeBaseArticlesAPI
+import "./parse-j8CtVGGo.js";
+
+const fetchUserInfoAPI = () => httpClient({ url: "api/v1/user/info" });
+const fetchUserNoticesAPI = () => httpClient({ url: "api/v1/user/notice/fetch" });
+const fetchCommonConfigAPI = () => httpClient({ url: "api/v1/user/comm/config" });
+const fetchUserSubscriptionAPI = () => httpClient({ url: "api/v1/user/getSubscribe" });
+const fetchAllPlansAPI = () => httpClient({ url: "api/v1/user/plan/fetch" });
+const fetchAllOrdersAPI = () => httpClient({ url: "api/v1/user/order/fetch" });
+
+/**
+ * Fetches details for a specific plan.
+ * @param {string|number} planId - The ID of the plan to fetch.
+ * @returns {Promise} A promise that resolves with the plan details.
+ */
+const fetchPlanDetails = planId => httpClient({ url: "api/v1/user/plan/fetch?id=" + planId });
+
+/**
+ * Checks the validity of a coupon.
+ * @param {object} couponData - Data related to the coupon to check.
+ * @returns {Promise} A promise that resolves with the coupon check result.
+ */
+const checkCoupon = couponData => httpClient({ url: "api/v1/user/coupon/check", method: "post", data: couponData });
+
+/**
+ * Saves a new order.
+ * @param {object} orderData - The data for the order to be saved.
+ * @returns {Promise} A promise that resolves with the save order result.
+ */
+const saveOrder = orderData => httpClient({ url: "api/v1/user/order/save", method: "post", data: orderData });
+
+/**
+ * Fetches the details of a specific order.
+ * @param {string} tradeNo - The trade number of the order.
+ * @returns {Promise} A promise that resolves with the order details.
+ */
+const fetchOrderDetail = tradeNo => httpClient({ url: "api/v1/user/order/detail?trade_no=" + tradeNo });
+
+/**
+ * Proceeds to checkout for an order.
+ * @param {object} checkoutData - Data required for the checkout process.
+ * @returns {Promise} A promise that resolves with the checkout result.
+ */
+const checkoutOrder = checkoutData => httpClient({ url: "api/v1/user/order/checkout", method: "post", data: checkoutData });
+
+/**
+ * Fetches available payment methods.
+ * @returns {Promise} A promise that resolves with the list of payment methods.
+ */
+const fetchPaymentMethods = () => httpClient({ url: "api/v1/user/order/getPaymentMethod" });
+
+/**
+ * Cancels an order.
+ * @param {object} orderData - Data of the order to be cancelled.
+ * @returns {Promise} A promise that resolves with the cancellation result.
+ */
+const cancelOrder = orderData => httpClient({ url: "api/v1/user/order/cancel", method: "post", data: orderData });
+
+/**
+ * @store UserStore
+ * @description Manages user-related state and actions, including user info, notices, configurations, subscriptions, orders, and knowledge base articles.
+ */
+const useUserStore = defineStore("User", () => {
+  const showAirBuddyCopyright = ref(!1);
+  showAirBuddyCopyright.value = !1; // Explicitly set if needed, though ref(false) initializes it to false.
+
+  const userInfo = ref(),
+    initUserInfo = () =>
+      new Promise((resolve, reject) => {
+        if (userInfo.value !== void 0) return resolve();
+        fetchUserInfoAPI()
+          .then(response => {
+            userInfo.value = response.data;
+            resolve();
+          })
+          .catch(() => reject());
+      });
+
+  const userNotices = ref(),
+    initUserNotices = () =>
+      new Promise((resolve, reject) => {
+        if (userNotices.value !== void 0) return resolve();
+        fetchUserNoticesAPI()
+          .then(response => {
+            userNotices.value = response;
+            resolve();
+          })
+          .catch(() => reject());
+      });
+
+  const commonConfig = ref(),
+    initCommonConfig = () =>
+      new Promise((resolve, reject) => {
+        if (commonConfig.value !== void 0) return resolve();
+        fetchCommonConfigAPI()
+          .then(response => {
+            commonConfig.value = response.data;
+            resolve();
+          })
+          .catch(() => reject());
+      });
+
+  const userSubscription = ref(),
+    initUserSubscription = () =>
+      new Promise((resolve, reject) => {
+        if (userSubscription.value !== void 0) return resolve();
+        fetchUserSubscriptionAPI()
+          .then(response => {
+            userSubscription.value = response.data;
+            resolve();
+          })
+          .catch(() => reject());
+      });
+
+  /**
+   * Initializes all essential user data by fetching user info, common config, notices, and subscription.
+   * @returns {Promise<Array>} A promise that resolves when all data has been fetched.
+   */
+  function initializeUserData() {
+    return Promise.all([initUserInfo(), initCommonConfig(), initUserNotices(), initUserSubscription()]);
+  }
+
+  const knowledgeBaseArticles = ref(),
+    /**
+     * Fetches knowledge base articles.
+     * Uses the imported `fetchKnowledgeBaseArticlesAPI`.
+     */
+    fetchKnowledgeBase = () =>
+      new Promise((resolve, reject) => {
+        if (knowledgeBaseArticles.value !== void 0) return resolve(); // Check if already fetched
+        fetchKnowledgeBaseArticlesAPI() // Use the renamed imported function
+          .then(response => {
+            knowledgeBaseArticles.value = response.data;
+            resolve();
+          })
+          .catch(() => {
+            reject();
+          });
+      });
+
+  const planList = ref(),
+    /**
+     * Fetches the list of available plans.
+     */
+    fetchPlanList = () =>
+      new Promise((resolve, reject) => {
+        if (planList.value !== void 0) return resolve(); // Check if already fetched
+        fetchAllPlansAPI()
+          .then(response => {
+            planList.value = response.data;
+            resolve();
+          })
+          .catch(() => reject());
+      });
+
+  const userOrders = ref();
+  /**
+   * Fetches the list of user's orders.
+   */
+  const fetchUserOrders = () =>
+    new Promise((resolve, reject) => {
+      if (userOrders.value !== undefined && userOrders.value !== null) return resolve(); // Check if already fetched
+      fetchAllOrdersAPI()
+        .then(response => {
+          userOrders.value = response.data;
+          resolve();
+        })
+        .catch(() => reject());
+    });
+
+  return {
+    AirBuddyCopyRight: showAirBuddyCopyright,
+    Init: initializeUserData,
+    Info: userInfo,
+    Notice: userNotices,
+    Config: commonConfig,
+    Subscribe: userSubscription,
+    Knowledge: knowledgeBaseArticles,
+    Set_Knowledge: fetchKnowledgeBase,
+    PlanList: planList,
+    Set_PlanList: fetchPlanList,
+    Order: userOrders,
+    Set_Order: fetchUserOrders
+  };
+});
+
+export {
+  checkCoupon, // P
+  saveOrder, // a
+  fetchPlanDetails, // b
+  cancelOrder, // c
+  fetchOrderDetail, // d
+  fetchPaymentMethods, // e
+  checkoutOrder, // f
+  useUserStore // u
+};
