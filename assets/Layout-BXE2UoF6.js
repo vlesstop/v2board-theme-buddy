@@ -59,7 +59,7 @@ const planCyclePanelWrapper = { class: "w-full rounded-xl p-5 bg-white flex-1", 
 const planCyclePanelTitle = { class: "text-xl font-black" };
 const planCyclePanelContentHTML = ["innerHTML"]; // For v-html directive
 const paymentCycleSectionWrapper = { class: "mt-5 rounded-xl p-5 bg-white", style: { "box-shadow": "var(--shadow)" } };
-const paymentCycleTitle = createElementVNode("p", { class: "text-md font-black" }, "付款周期", -1);
+const paymentCycleTitle = createElementVNode("p", { class: "text-md font-black" }, "付款週期", -1);
 const paymentCycleOptionsWrapper = { class: "flex lg:flex-wrap lg:flex-row flex-col text-sm font-black text-[var(--text-gray)] gap-5 items-center mt-5" };
 const paymentCycleOptionEvents = ["onClick"];
 
@@ -131,21 +131,21 @@ const PlanCycleSelectionPanel = { // Original: W
 
 // Constants for OrderSummaryPanel template
 const orderSummaryPanelWrapper = { class: "bg-white p-5 mb-5 lg:mb-0 rounded-xl h-[100%]", style: { "box-shadow": "var(--shadow)" } };
-const orderSummaryTitle = createElementVNode("p", { class: "font-black" }, "订单详情", -1);
+const orderSummaryTitle = createElementVNode("p", { class: "font-black" }, "訂單詳情", -1);
 const orderDetailsSection = { class: "mt-4" };
-const orderTotalLabel = createElementVNode("p", { class: "text-[12px] font-black text-[var(--text-gray)]" }, "订单总额", -1);
+const orderTotalLabel = createElementVNode("p", { class: "text-[12px] font-black text-[var(--text-gray)]" }, "訂單總額", -1);
 const orderTotalValues = { class: "flex gap-2 font-black justify-between mt-2" };
 const orderTotalCurrency = { class: "text-[var(--text-gray)]" };
 const trafficLabel = createElementVNode("p", { class: "text-[12px] mt-5 font-black text-[var(--text-gray)]" }, "套餐流量", -1);
 const trafficValueStyle = { class: "font-black text-[var(--text-gray)] mt-2" }; // Renamed from ot to avoid conflict with type
-const discountAmountSection = createElementVNode("div", { class: "mt-5 flex justify-between" }, [createElementVNode("p", { class: "text-[12px] font-black text-[var(--text-gray)]" }, "折扣金额")], -1);
+const discountAmountSection = createElementVNode("div", { class: "mt-5 flex justify-between" }, [createElementVNode("p", { class: "text-[12px] font-black text-[var(--text-gray)]" }, "折扣金額")], -1);
 const couponSection = { class: "flex flex-col mt-5 justify-between" };
 const deductionSection = { class: "mt-5" };
-const deductionLabel = createElementVNode("p", { class: "text-[12px] font-black text-[var(--text-gray)]" }, "抵扣金额", -1);
+const deductionLabel = createElementVNode("p", { class: "text-[12px] font-black text-[var(--text-gray)]" }, "抵扣金額", -1);
 const deductionValueStyle = { class: "mt-2 font-black text-[var(--text-gray)]" }; // Renamed from ut
 const hrElement = createElementVNode("hr", { class: "mt-5" }, null, -1);
 const paymentTotalSection = { class: "mt-5 flex text-lg justify-between items-center" };
-const paymentTotalLabel = createElementVNode("p", null, "支付总计", -1);
+const paymentTotalLabel = createElementVNode("p", null, "支付總計", -1);
 const paymentTotalValueStyle = { class: "font-black text-xl" }; // Renamed from _t
 
 /**
@@ -171,7 +171,7 @@ const OrderSummaryPanel = { // Original: vt
             orderData.value.applyCoupon(response.data); // t.value.Handel_Coupon(l.data)
             orderData.value.couponCode = this.code; // t.value.Coupon = this.value
           }).catch(error => {
-            notificationService.error(error.message || "优惠券无效");
+            notificationService.error(error.message || "優惠券無效");
           });
       }
     });
@@ -183,11 +183,11 @@ const OrderSummaryPanel = { // Original: vt
         try {
           // Original: setTimeout(async()=>{...}, 100) - removed timeout for direct async
           const orderResult = await orderData.value.createOrder(); // l = await t.value.BuyNow()
-          notificationService.success("订单创建成功"); // L.success
+          notificationService.success("訂單創建成功"); // L.success
           this.isLoading = false;
           await router.push({ name: "CheckOut", params: { id: orderResult.data } }); // s.push
         } catch (error) {
-          notificationService.error(error.message || "订单创建失败");
+          notificationService.error(error.message || "訂單創建失敗");
           this.isLoading = false;
         }
       }
@@ -214,8 +214,8 @@ const OrderSummaryPanel = { // Original: vt
           createVNode(AntInputSearch, { // v(f, ...)
             value: couponState.value.code, // a.value.value
             "onUpdate:value": cache[0] || (cache[0] = val => couponState.value.code = val),
-            "enter-button": "验证",
-            placeholder: "请输入优惠券",
+            "enter-button": "驗證",
+            placeholder: "請輸入優惠券",
             size: "middle",
             onSearch: cache[1] || (cache[1] = () => couponState.value.apply()) // onSearch: m=>a.value.ok()
           }, null, 8, ["value"])
@@ -237,7 +237,7 @@ const OrderSummaryPanel = { // Original: vt
           type: "primary",
           onClick: cache[2] || (cache[2] = () => checkoutState.value.submitOrder()) // onClick: m=>u.value.submit()
         }, {
-          default: withCtx(() => [createTextVNode("立即购买")]), // H(()=>[F(...)])
+          default: withCtx(() => [createTextVNode("立即購買")]), // H(()=>[F(...)])
           _: 1
         }, 8, ["loading"])
       ]);
@@ -310,7 +310,7 @@ const CheckoutLayout = { // Mt
              orderDetails.value.selectedCycle = PlanService.prototype.getDefaultPlanCycleKey(plan.data);
         }
       } catch (error) {
-        notificationService.error("无法加载套餐详情，将返回首页。");
+        notificationService.error("無法加載套餐詳情，將返回首頁。");
         router.push("/dashboard"); // M.push(...) - Original was M.push, assuming M is the primary router
       }
     });

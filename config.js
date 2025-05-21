@@ -1,46 +1,46 @@
 window.config={
-    logo: 'https://img2.imgtp.com/2024/03/11/YzU8iDJp.png', // 网站logo
-    title:"AirBus", // 网站标题
-    host:"https://user.r8s.top/", // 后端接口地址
+    logo: 'https://img2.imgtp.com/2024/03/11/YzU8iDJp.png', // 網站logo
+    title:"AirBus", // 網站標題
+    host:"https://user.r8s.top/", // 後端接口地址
     storeHome: {
-        title: '选择最适合你的订阅计划', // 套餐页标题
-        description: '若您已购买订阅且当前未过期，再次购买相同套餐将在原过期时间上追加时长，购买其他套餐则对原有订阅进行折抵' // 套餐页描述
+        title: '選擇最適合你的訂閱計劃', // 套餐頁標題
+        description: '若您已購買訂閱且當前未過期，再次購買相同套餐將在原過期時間上追加時長，購買其他套餐則對原有訂閱進行折抵' // 套餐頁描述
     },
     SignPage: {
-        title: '覆盖全球的高速网络，您的高速旅程从 AirBus 开始', // 登录页标题
-        desc1: 'High-speed network covering the whole world', // 登录页描述1
-        desc2: 'Your high-speed journey starts with AirBus', // 登录页描述2
-        inviteCodeEdit: false, // 是否允许用户修改邀请码
+        title: '覆蓋全球的高速網絡，您的高速旅程從 AirBus 開始', // 登錄頁標題
+        desc1: 'High-speed network covering the whole world', // 登錄頁描述1
+        desc2: 'Your high-speed journey starts with AirBus', // 登錄頁描述2
+        inviteCodeEdit: false, // 是否允許用戶修改邀請碼
     },
     homeClient: {
-        display: true, // 是否显示客户端下载教程卡片
+        display: true, // 是否顯示客戶端下載教程卡片
         clients: [
             {
                 key: 'windows',
-                title: 'Windows客户端',
+                title: 'Windows客戶端',
                 icon: 'ri:windows-fill',
-                downloadLink: 'https://www.microsoft.com/zh-cn', // Windows客户端下载地址
+                downloadLink: 'https://www.microsoft.com/zh-cn', // Windows客戶端下載地址
                 knowledgeLink: '/dashboard/knowledge/10', // 使用教程地址
             },
             {
                 key: 'mac',
-                title: 'Mac客户端',
+                title: 'Mac客戶端',
                 icon: 'ri:finder-fill',
-                downloadLink: 'https://www.apple.com/macos/sonoma/', // Mac客户端下载地址
+                downloadLink: 'https://www.apple.com/macos/sonoma/', // Mac客戶端下載地址
                 knowledgeLink: '/dashboard/knowledge/8', // 使用教程地址
             },
             {
                 key: 'android',
-                title: 'Android客户端',
+                title: 'Android客戶端',
                 icon: 'ri:android-fill',
-                downloadLink: 'https://www.google.com/', // Android客户端下载地址
+                downloadLink: 'https://www.google.com/', // Android客戶端下載地址
                 knowledgeLink: '/dashboard/knowledge/11', // 使用教程地址
             },
             {
                 key: 'ios',
-                title: 'iOS客户端',
+                title: 'iOS客戶端',
                 icon: 'ri:apple-fill',
-                downloadLink: 'https://www.apple.com/ios/ios-17/', // iOS客户端下载地址
+                downloadLink: 'https://www.apple.com/ios/ios-17/', // iOS客戶端下載地址
                 knowledgeLink: '/dashboard/knowledge/12', // 使用教程地址
             },
             {
@@ -53,11 +53,11 @@ window.config={
         ],
     },
     homeBanner: {
-        display: true, // 是否显示首页横幅
-        title: '邀请好友，共享优惠', // 首页banner标题
-        link: '/dashboard/invite', // 首页banner链接，站内链接
-        btnText: '立即邀请', // 首页banner按钮文字
-        element: 'https://gd-hbimg.huaban.com/e68ceb12ffbd7dbeb698b3c5f4d2ed90185241be25183e-tShOmr_fw1200webp', // 首页banner元素图片
-        bgImg: 'https://gd-hbimg.huaban.com/246ac6f06aeeab3b0c7e5908e7693b9a0e1b8a5249899-hB42f3_fw1200', // 首页banner背景图片
+        display: true, // 是否顯示首頁橫幅
+        title: '邀請好友，共享優惠', // 首頁banner標題
+        link: '/dashboard/invite', // 首頁banner鏈接，站內鏈接
+        btnText: '立即邀請', // 首頁banner按鈕文字
+        element: 'https://gd-hbimg.huaban.com/e68ceb12ffbd7dbeb698b3c5f4d2ed90185241be25183e-tShOmr_fw1200webp', // 首頁banner元素圖片
+        bgImg: 'https://gd-hbimg.huaban.com/246ac6f06aeeab3b0c7e5908e7693b9a0e1b8a5249899-hB42f3_fw1200', // 首頁banner背景圖片
     }
 }

@@ -33,7 +33,7 @@ const PlanService = class PlanService {
       case "year_price":
         return "年付";
       case "two_year_price":
-        return "两年";
+        return "兩年";
       case "three_year_price":
         return "三年";
       case "onetime_price":
@@ -55,7 +55,7 @@ const PlanService = class PlanService {
       case 0:
         return [0, "待支付", "warning"];
       case 1:
-        return [1, "开通中", "processing"];
+        return [1, "開通中", "processing"];
       case 2:
         return [2, "已取消", "error"];
       case 3:
@@ -63,7 +63,7 @@ const PlanService = class PlanService {
       case 4:
         return [4, "已折抵", "success"];
       default:
-        return [-1, "未知状态", "default"]; // Or handle as an error/unknown case
+        return [-1, "未知狀態", "default"]; // Or handle as an error/unknown case
     }
   }
 
@@ -93,9 +93,9 @@ const PlanService = class PlanService {
   static formatExpiryDate(timestamp) {
     switch (timestamp) {
       case null:
-        return "无限期";
+        return "無限期";
       case 0:
-        return "尚未购买订阅";
+        return "尚未購買訂閱";
       default:
         return moment(timestamp * 1e3).format("YYYY-MM-DD");
     }
@@ -119,10 +119,10 @@ const PlanService = class PlanService {
     // The original logic was: return e===null&&r===null?"无限期":r-1
     // This implies if either is not null, it returns r-1.
     // If e (expiryTimestamp) is a date and r (currentTimestamp) is total days of plan, the logic is mixed.
-    // Let's assume if a plan is "无限期" (expiryTimestamp is null), and currentTimestamp is also null (or not applicable for "无限期" plans), then "无限期".
+    // Let's assume if a plan is "无限期" (expiryTimestamp is null), and currentTimestamp is also null (or not applicable for "无限期" plans), then "無限期".
     // Otherwise, it uses currentTimestamp - 1. This is a direct translation but might not be meaningful without context for 'r'.
     if (expiryTimestamp === null && currentTimestamp === null) {
-      return "无限期";
+      return "無限期";
     }
     // If currentTimestamp is meant to be remaining days already, then `currentTimestamp -1` is odd.
     // If currentTimestamp is total plan duration in days, then `currentTimestamp - 1` is also odd.
